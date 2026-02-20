@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Card */
+.Stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Timer Display */
+.Display {
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Buttons Container */
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+/* Base Button Style */
+.controls button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  min-width: 120px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* Hover Animation */
+.controls button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Active Press Effect */
+.controls button:active {
+  transform: scale(0.95);
+}
+
+/* Start Button */
+.Start-button {
+  background: linear-gradient(135deg, #00c853, #00e676);
+}
+
+/* Stop Button */
+.Stop-button {
+  background: linear-gradient(135deg, #ff1744, #ff5252);
+}
+
+/* Reset Button */
+.Reset-button {
+  background: linear-gradient(135deg, #2979ff, #448aff);
+}
